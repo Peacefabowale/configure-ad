@@ -24,10 +24,11 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Setup Domain Controller in Azure
+- Set Domain controller's NIC private IP address to be static
+- Disable windows firewall in the VM for testing connectivity
+- Create client-1 or another VM in azure
+- Set client-1's DNS setting to DC-1's private IP address
 
 <h2>Deployment and Configuration Steps</h2>
 
