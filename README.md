@@ -29,25 +29,41 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/B7wwr2O.png">
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+To set up active directory first you'll need to create a domain controller virtual machine thats sorts of act like the back end access to the other virtual machine you'll end up creating.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/Z1GaDME.png">
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+For the last step in setting up active directory you'll need your Domain controllers NIC private IP address to be static meaning it doesn't change.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/jWHzAjr.png">
+</p>
+<p>
+Disabling windows firewall allows for testing connectivity within the virtual machine.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/1Bcztb3.png">
+</p>
+<p>
+For active directory to be fully functional you'll need another virtual machine which will basically hold the users you'll create and its sort of like the computer they can use if you assign them permissions to it.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/Y7etExm.png">
+</p>
+<p>
+For connectivity and for active directory this is the most crucial step because its basically what connects the two computer together.
 </p>
 <br />
